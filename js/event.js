@@ -1,0 +1,1 @@
+conosle.log('This is seperate file')
