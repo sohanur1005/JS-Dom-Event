@@ -12,18 +12,20 @@
     <br>
     <button onclick="makeGreen()">Make Green</button>
     <button id="make-purple">Make Purple</button>
+    <button id="make-pink">Make Pink</button>
+    <button id="make-orange">Make Orange</button>
 
     <script>
         function makeGreen(){
             document.body.style.backgroundColor='green';
         }
-        // for purple button
-        const purpleButton=document.getElementById('make-purple')
-            purpleButton.onclick=makePurple;
+       
+        const pinkButton=document.getElementById('make-pink')
+        pinkButton.addEventListener('click',makePink)
 
-            function makePurple(){
-                document.body.style.backgroundColor='purple';
-            }
+        function makePink(){
+            document.body.style.backgroundColor='pink';
+        }
         
 
     </script>
