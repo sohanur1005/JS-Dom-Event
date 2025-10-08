@@ -9,6 +9,24 @@
     <h1>Dom Event</h1>
     <button onclick="console.log(1005)">Click me</button>
     <button  onclick="console.log(19)">Another click</button>
+    <br>
+    <button onclick="makeGreen()">Make Green</button>
+    <button id="make-purple">Make Purple</button>
+
+    <script>
+        function makeGreen(){
+            document.body.style.backgroundColor='green';
+        }
+        // for purple button
+        const purpleButton=document.getElementById('make-purple')
+            purpleButton.onclick=makePurple;
+
+            function makePurple(){
+                document.body.style.backgroundColor='purple';
+            }
+        
+
+    </script>
 
 
     <script src="js/event.js"></script>
