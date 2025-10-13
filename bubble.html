@@ -19,8 +19,9 @@
     </section>
 
     <script>
-        document.getElementById('item-2').addEventListener('clicked',function(){
+        document.getElementById('item-2').addEventListener('clicked',function(event){
             console.log('Item-2 clicked');
+            // event.stopPropagation();
         })
         document.getElementById('list-ul').addEventListener('clicked',function(){
             console.log('ul clicked');
