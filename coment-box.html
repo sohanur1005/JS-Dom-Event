@@ -25,11 +25,11 @@
             const newComent=comentBox.value;
             // step3:set  the coment inside the coment container
 
-            const comentContainer=Document.getElementById('coment-container')
+            const comentContainer=document.getElementById('coment-container')
             const p=document.createElement('p')
             p.innerText=newComent;
            comentContainer.appendChild(p);
-        //    step 4:clear the coment on 
+        //    step 4:clear the coment on text area
         comentBox.value='';
 
 
