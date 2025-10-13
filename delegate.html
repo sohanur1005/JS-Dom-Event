@@ -8,7 +8,7 @@
 <body>
     <h1>Explore Event Delegate</h1>
     <section>
-        <ul id="list-conatiner">
+        <ul id="list-container">
             <li class="item">Lorem, ipsum dolor.</li>
             <li class="item">Non, eaque iure.</li>
             <li class="item">Totam, minus quam.</li>
@@ -16,6 +16,8 @@
             <li class="item">Facere, nesciunt saepe!</li>
             <li class="item">Voluptates, corporis quam!</li>
         </ul>
+       <button id="btn-add-item">Add Item</button>
+
     </section>
 
     <script>
@@ -25,16 +27,24 @@
         // call parent node and tell to remove target event
         item.addEventListener('click',function(event){
             event.target.parentNode.removeChild(event.target);
-            
-
-
-
-
+        
              
         })
 
        
     }
+    document.getElementById('list-container').addEventListener('click',function(event){
+        event.target.parentNode.removeChild(event.target)
+    })
+    
+
+    document.getElementById('btn-add-item').addEventListener('click',function(){
+        const listContainer=document.getElementById('list-container');
+        const li=document.createElement('li');
+        li.innerText='Brand New Item Added';
+        li.classList.add('item');
+        listContainer.appendChild(li);
+    })
     </script>
     
 </body>
